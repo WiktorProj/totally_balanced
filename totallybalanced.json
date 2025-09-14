@@ -1,0 +1,17 @@
+{
+  "id": "totallybalanced",
+  "name": "totally balanced",
+  "author": [
+    "wk"
+  ],
+  "description": "totally balanced!",
+  "prefix": "totallyb",
+  "main_file": "main.lua",
+  "version": "1.0.0",
+  "priority": 0,
+  "badge_colour": "a10000",
+  "badge_text_colour": "000000",
+  "dependencies": [
+    "Steamodded (>=1.0.0~BETA-0827c)"
+  ]
+}
