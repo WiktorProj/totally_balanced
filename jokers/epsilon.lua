@@ -9,14 +9,14 @@ SMODS.Joker{ --Epsilon
     loc_txt = {
         ['name'] = 'Epsilon',
         ['text'] = {
-            [1] = 'Why does this exist. {C:red}^^^2 Mult{}'
+            [1] = 'Why does this exist. {C:red}2^^^ Mult{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 3,
+        x = 5,
         y = 0
     },
     display_size = {

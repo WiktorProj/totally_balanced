@@ -19,7 +19,7 @@ SMODS.Joker{ --Fractal Goblin
         }
     },
     pos = {
-        x = 8,
+        x = 9,
         y = 0
     },
     display_size = {

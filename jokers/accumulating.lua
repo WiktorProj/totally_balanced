@@ -1,23 +1,22 @@
-SMODS.Joker{ --Do a Spin!
-    key = "doaspin",
+SMODS.Joker{ --Accumulating
+    key = "accumulating",
     config = {
         extra = {
-            scale = 1,
-            rotation = 2,
-            onetime = 0
+            mult = 1
         }
     },
     loc_txt = {
-        ['name'] = 'Do a Spin!',
+        ['name'] = 'Accumulating',
         ['text'] = {
-            [1] = 'Swap {C:blue}Chips{} and {C:red}Mult{}'
+            [1] = '{C:red}+1 Mult{} on start of round',
+            [2] = '(Currently {X:red,C:white}X#1#{} Mult)'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 3,
+        x = 2,
         y = 0
     },
     display_size = {
@@ -26,7 +25,7 @@ SMODS.Joker{ --Do a Spin!
     },
     cost = 5,
     rarity = 2,
-    blueprint_compat = false,
+    blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
@@ -34,17 +33,19 @@ SMODS.Joker{ --Do a Spin!
     atlas = 'CustomJokers',
     pools = { ["totallyb_totallyb_jokers"] = true },
 
+    loc_vars = function(self, info_queue, card)
+        return {vars = {card.ability.extra.mult}}
+    end,
+
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
-                local target_card = context.other_card
+                local mult_value = card.ability.extra.mult
+                card.ability.extra.mult = (card.ability.extra.mult) + 1
                 return {
-                    swap = true,
+                    Xmult = mult_value,
                     extra = {
-                        func = function()
-                      card:juice_up(card.ability.extra.scale, card.ability.extra.rotation)
-                      return true
-                    end,
-                        colour = G.C.WHITE
+                        message = "+1",
+                        colour = G.C.GREEN
                         }
                 }
         end

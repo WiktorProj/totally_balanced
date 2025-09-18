@@ -1,4 +1,4 @@
-SMODS.Joker{ --shitpost
+SMODS.Joker{ --oye
     key = "shitpost",
     config = {
         extra = {
@@ -7,7 +7,7 @@ SMODS.Joker{ --shitpost
         }
     },
     loc_txt = {
-        ['name'] = 'shitpost',
+        ['name'] = 'oye',
         ['text'] = {
             [1] = '{X:blue,C:white}+#1#{} {C:blue}Chips{}. that\'s literally it what did you expect...?'
         },
@@ -16,7 +16,7 @@ SMODS.Joker{ --shitpost
         }
     },
     pos = {
-        x = 5,
+        x = 4,
         y = 1
     },
     display_size = {

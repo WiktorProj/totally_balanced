@@ -100,7 +100,9 @@ SMODS.ObjectType({
     cards = {
         ["j_totallyb_nothing"] = true,
         ["j_totallyb_money"] = true,
+        ["j_totallyb_accumulating"] = true,
         ["j_totallyb_doaspin"] = true,
+        ["j_totallyb_e"] = true,
         ["j_totallyb_epsilon"] = true,
         ["j_totallyb_exchange"] = true,
         ["j_totallyb_extremegar"] = true,
@@ -110,6 +112,8 @@ SMODS.ObjectType({
         ["j_totallyb_gargar"] = true,
         ["j_totallyb_omega"] = true,
         ["j_totallyb_shitpost"] = true,
+        ["j_totallyb_recursivecard"] = true,
+        ["j_totallyb_seeingdouble"] = true,
         ["j_totallyb_toohard"] = true,
         ["j_totallyb_unnanify"] = true,
         ["j_totallyb_whatdoiputhere"] = true

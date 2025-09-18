@@ -1,29 +1,31 @@
-SMODS.Joker{ --Extreme Gar
-    key = "extremegar",
+SMODS.Joker{ --e
+    key = "e",
     config = {
         extra = {
-            hypermult_n = 5,
-            hypermult_arrows = 2
+            hypermult_n = 2,
+            hypermult_arrows = 1,
+            hyperchips_n = 2,
+            hyperchips_arrows = 1
         }
     },
     loc_txt = {
-        ['name'] = 'Extreme Gar',
+        ['name'] = 'e',
         ['text'] = {
-            [1] = '{C:red}5^^ Mult{}'
+            [1] = 'Add an {C:attention}e{} to the {C:red}Mult{} and {C:blue}Chips{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 7,
+        x = 4,
         y = 0
     },
     display_size = {
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 12,
+    cost = 20,
     rarity = 4,
     blueprint_compat = true,
     eternal_compat = true,
@@ -47,7 +49,14 @@ SMODS.Joker{ --Extreme Gar
                     hypermult = {
     card.ability.extra.hypermult_arrows,
     card.ability.extra.hypermult_n
-}
+},
+                    extra = {
+                        hyperchips = {
+    card.ability.extra.hyperchips_arrows,
+    card.ability.extra.hyperchips_n
+},
+                        colour = G.C.DARK_EDITION
+                        }
                 }
         end
     end

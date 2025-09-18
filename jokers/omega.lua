@@ -9,14 +9,14 @@ SMODS.Joker{ --Omega
     loc_txt = {
         ['name'] = 'Omega',
         ['text'] = {
-            [1] = '{E:5}Oh god... {C:red}^^2 Mult{}{}'
+            [1] = '{E:5}Oh god... {C:red}2^^ Mult{}{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 2,
+        x = 3,
         y = 1
     },
     display_size = {
