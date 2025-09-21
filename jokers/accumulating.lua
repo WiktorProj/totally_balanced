@@ -16,7 +16,7 @@ SMODS.Joker{ --Accumulating
         }
     },
     pos = {
-        x = 2,
+        x = 3,
         y = 0
     },
     display_size = {

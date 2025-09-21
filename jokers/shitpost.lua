@@ -16,7 +16,7 @@ SMODS.Joker{ --oye
         }
     },
     pos = {
-        x = 4,
+        x = 5,
         y = 1
     },
     display_size = {
@@ -24,7 +24,7 @@ SMODS.Joker{ --oye
         h = 95 * 1
     },
     cost = 5,
-    rarity = 2,
+    rarity = "totallyb_funnies",
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

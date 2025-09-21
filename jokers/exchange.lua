@@ -16,7 +16,7 @@ SMODS.Joker{ --Exchange
         }
     },
     pos = {
-        x = 6,
+        x = 7,
         y = 0
     },
     display_size = {

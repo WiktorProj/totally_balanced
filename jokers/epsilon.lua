@@ -16,7 +16,7 @@ SMODS.Joker{ --Epsilon
         }
     },
     pos = {
-        x = 5,
+        x = 6,
         y = 0
     },
     display_size = {
@@ -24,7 +24,7 @@ SMODS.Joker{ --Epsilon
         h = 95 * 1
     },
     cost = 1000,
-    rarity = 4,
+    rarity = "totallyb_beyond",
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

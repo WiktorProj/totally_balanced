@@ -99,6 +99,7 @@ SMODS.ObjectType({
     key = "totallyb_totallyb_jokers",
     cards = {
         ["j_totallyb_nothing"] = true,
+        ["j_totallyb_minus1"] = true,
         ["j_totallyb_money"] = true,
         ["j_totallyb_accumulating"] = true,
         ["j_totallyb_doaspin"] = true,

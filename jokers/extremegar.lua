@@ -16,7 +16,7 @@ SMODS.Joker{ --Extreme Gar
         }
     },
     pos = {
-        x = 7,
+        x = 8,
         y = 0
     },
     display_size = {
@@ -24,7 +24,7 @@ SMODS.Joker{ --Extreme Gar
         h = 95 * 1
     },
     cost = 12,
-    rarity = 4,
+    rarity = "totallyb_beyond",
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -32,14 +32,6 @@ SMODS.Joker{ --Extreme Gar
     discovered = true,
     atlas = 'CustomJokers',
     pools = { ["totallyb_totallyb_jokers"] = true },
-    in_pool = function(self, args)
-          return (
-          not args 
-          or args.source ~= 'sho' 
-          or args.source == 'buf' or args.source == 'jud' or args.source == 'rif' or args.source == 'rta' or args.source == 'sou' or args.source == 'uta' or args.source == 'wra'
-          )
-          and true
-      end,
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then

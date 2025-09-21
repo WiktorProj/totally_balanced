@@ -14,7 +14,7 @@ SMODS.Joker{ --Recursive Card
         }
     },
     pos = {
-        x = 7,
+        x = 8,
         y = 1
     },
     display_size = {

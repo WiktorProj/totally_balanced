@@ -16,7 +16,7 @@ SMODS.Joker{ --Un-NaN-ify
         }
     },
     pos = {
-        x = 0,
+        x = 1,
         y = 2
     },
     display_size = {
@@ -24,7 +24,7 @@ SMODS.Joker{ --Un-NaN-ify
         h = 95 * 1
     },
     cost = 1e+22,
-    rarity = 4,
+    rarity = "totallyb_beyond",
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

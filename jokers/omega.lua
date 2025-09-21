@@ -16,7 +16,7 @@ SMODS.Joker{ --Omega
         }
     },
     pos = {
-        x = 3,
+        x = 4,
         y = 1
     },
     display_size = {
@@ -24,7 +24,7 @@ SMODS.Joker{ --Omega
         h = 95 * 1
     },
     cost = 100,
-    rarity = 4,
+    rarity = "totallyb_beyond",
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

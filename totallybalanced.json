@@ -7,7 +7,7 @@
   "description": "totally balanced!",
   "prefix": "totallyb",
   "main_file": "main.lua",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "priority": 0,
   "badge_colour": "a10000",
   "badge_text_colour": "000000",
