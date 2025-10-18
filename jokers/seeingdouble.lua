@@ -18,7 +18,7 @@ SMODS.Joker{ --Seeing Double
         }
     },
     pos = {
-        x = 9,
+        x = 7,
         y = 1
     },
     display_size = {

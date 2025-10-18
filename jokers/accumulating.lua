@@ -16,8 +16,8 @@ SMODS.Joker{ --Accumulating
         }
     },
     pos = {
-        x = 3,
-        y = 0
+        x = 1,
+        y = 2
     },
     display_size = {
         w = 71 * 1, 
@@ -34,6 +34,7 @@ SMODS.Joker{ --Accumulating
     pools = { ["totallyb_totallyb_jokers"] = true },
 
     loc_vars = function(self, info_queue, card)
+        
         return {vars = {card.ability.extra.mult}}
     end,
 

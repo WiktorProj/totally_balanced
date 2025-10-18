@@ -1,30 +1,30 @@
-SMODS.Joker{ --Epsilon
-    key = "epsilon",
+SMODS.Joker{ --Not
+    key = "not",
     config = {
         extra = {
-            hypermult_n = 2,
-            hypermult_arrows = 3
+            Xmult = -10,
+            xchips = -10
         }
     },
     loc_txt = {
-        ['name'] = 'Epsilon',
+        ['name'] = 'Not',
         ['text'] = {
-            [1] = 'Why does this exist. {C:red}2^^^ Mult{}'
+            [1] = '{C:red}X-10 Mult{} and {C:blue}X-10 Chips{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 5,
-        y = 0
+        x = 4,
+        y = 2
     },
     display_size = {
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 1000,
-    rarity = "totallyb_beyond",
+    cost = 5,
+    rarity = 2,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -36,10 +36,11 @@ SMODS.Joker{ --Epsilon
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
                 return {
-                    hypermult = {
-    card.ability.extra.hypermult_arrows,
-    card.ability.extra.hypermult_n
-}
+                    Xmult = card.ability.extra.Xmult,
+                    extra = {
+                        x_chips = card.ability.extra.xchips,
+                        colour = G.C.DARK_EDITION
+                        }
                 }
         end
     end

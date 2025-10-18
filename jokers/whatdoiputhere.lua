@@ -16,7 +16,7 @@ SMODS.Joker{ --What do I put here?
         }
     },
     pos = {
-        x = 2,
+        x = 0,
         y = 2
     },
     display_size = {

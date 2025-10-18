@@ -16,8 +16,8 @@ SMODS.Joker{ --TooHard
         }
     },
     pos = {
-        x = 0,
-        y = 2
+        x = 8,
+        y = 1
     },
     display_size = {
         w = 71 * 1, 
@@ -39,7 +39,7 @@ SMODS.Joker{ --TooHard
                     func = function()
                 local destructable_jokers = {}
                 for i, joker in ipairs(G.jokers.cards) do
-                    if joker ~= card and not joker.ability.eternal and not joker.getting_sliced then
+                    if joker ~= card and not SMODS.is_eternal(joker) and not joker.getting_sliced then
                         table.insert(destructable_jokers, joker)
                     end
                 end

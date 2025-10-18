@@ -2,7 +2,7 @@ SMODS.Joker{ --Fractal
     key = "fractal",
     config = {
         extra = {
-            xchips = 6,
+            xchips = 8,
             ignore = 0
         }
     },
@@ -16,7 +16,7 @@ SMODS.Joker{ --Fractal
         }
     },
     pos = {
-        x = 9,
+        x = 8,
         y = 0
     },
     display_size = {

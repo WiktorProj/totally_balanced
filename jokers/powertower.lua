@@ -15,7 +15,7 @@ SMODS.Joker{ --Power Tower
         }
     },
     pos = {
-        x = 6,
+        x = 5,
         y = 1
     },
     display_size = {

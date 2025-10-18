@@ -2,6 +2,8 @@ SMODS.Joker{ --Recursive Card
     key = "recursivecard",
     config = {
         extra = {
+            y = 0,
+            n = 0
         }
     },
     loc_txt = {
@@ -14,8 +16,8 @@ SMODS.Joker{ --Recursive Card
         }
     },
     pos = {
-        x = 8,
-        y = 1
+        x = 2,
+        y = 2
     },
     display_size = {
         w = 71 * 1, 
@@ -34,25 +36,29 @@ SMODS.Joker{ --Recursive Card
     calculate = function(self, card, context)
         if context.after and context.cardarea == G.jokers  then
                 return {
-                    func = function()local created_consumable = false
-                if #G.consumeables.cards + G.GAME.consumeable_buffer < G.consumeables.config.card_limit then
-                    created_consumable = true
-                    G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1
-                    G.E_MANAGER:add_event(Event({
-                        func = function()
-                            local random_sets = {'Tarot', 'Planet', 'Spectral'}
-                            local random_set = random_sets[math.random(1, #random_sets)]
-                            SMODS.add_card{set=random_set, soulable = nil, key_append='joker_forge_' .. random_set:lower()}
-                            G.GAME.consumeable_buffer = 0
-                            return true
-                        end
-                    }))
-                end
+                    func = function()
+      
+    for i = 1, 1 do
+            G.E_MANAGER:add_event(Event({
+            trigger = 'after',
+            delay = 0.4,
+            func = function()
+            play_sound('timpani')
+            local sets = {'Tarot', 'Planet', 'Spectral'}
+            local random_set = pseudorandom_element(sets, 'random_consumable_set')
+            SMODS.add_card({ set = random_set, soulable = true, })                            
+            card:juice_up(0.3, 0.5)
+            return true
+        end
+        }))
+    end
+    delay(0.6)
+
                     if created_consumable then
                         card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = localize('k_plus_consumable'), colour = G.C.PURPLE})
                     end
                     return true
-                end
+                  end
                 }
         end
     end

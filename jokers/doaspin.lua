@@ -17,7 +17,7 @@ SMODS.Joker{ --Do a Spin!
         }
     },
     pos = {
-        x = 4,
+        x = 3,
         y = 0
     },
     display_size = {

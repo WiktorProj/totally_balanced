@@ -27,3 +27,18 @@ SMODS.Rarity {
         return weight
     end,
 }
+
+SMODS.Rarity {
+    key = "infinity",
+    pools = {
+        ["Joker"] = true
+    },
+    default_weight = 0,
+    badge_colour = HEX('4e008b'),
+    loc_txt = {
+        name = "INFINITY"
+    },
+    get_weight = function(self, weight, object_type)
+        return weight
+    end,
+}

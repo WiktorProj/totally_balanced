@@ -16,7 +16,7 @@ SMODS.Joker{ --g64
         }
     },
     pos = {
-        x = 1,
+        x = 0,
         y = 1
     },
     display_size = {
@@ -76,7 +76,7 @@ SMODS.Joker{ --g64
               SMODS.calculate_effect({func = function()
                 local target_joker = nil
                 for i, joker in ipairs(G.jokers.cards) do
-                    if joker.config.center.key == "j_totallyb_gar" and not joker.ability.eternal and not joker.getting_sliced then
+                    if joker.config.center.key == "j_totallyb_gar" and not SMODS.is_eternal(joker) and not joker.getting_sliced then
                         target_joker = joker
                         break
                     end

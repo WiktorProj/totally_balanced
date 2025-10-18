@@ -16,7 +16,7 @@ SMODS.Joker{ --oye
         }
     },
     pos = {
-        x = 5,
+        x = 4,
         y = 1
     },
     display_size = {
@@ -34,6 +34,7 @@ SMODS.Joker{ --oye
     pools = { ["totallyb_totallyb_jokers"] = true },
 
     loc_vars = function(self, info_queue, card)
+        
         return {vars = {card.ability.extra.val}}
     end,
 
